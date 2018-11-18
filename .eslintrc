@@ -1,0 +1,15 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint-config-airbnb-base"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "GAME_ROOT": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+  }
+}
